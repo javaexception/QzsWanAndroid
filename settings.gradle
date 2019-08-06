@@ -1,0 +1,1 @@
+include ':app', ':wandroid_sdk'

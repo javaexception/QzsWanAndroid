@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray1"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@mipmap/ic_project_bg1"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white">
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrows_left_white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_toolbar_left" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/drawable_complete_person_head_back2"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="5dp"
+        android:text="我的微信公众号\n【秦子帅】"
+        android:textColor="#262626"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:src="@mipmap/ic_me"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="100dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:text="我的博客"
+        android:textColor="#262626"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/txt1"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="http://qinzishuai.cn"
+        />
+
+
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/drawable_complete_person_head_back2"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="5dp"
+            android:text="我的群组"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:textSize="15sp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:textColor="#262626"
+    android:text="QQ群"
+    android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/txt1"
+            android:text="▶程序员招聘(内推)群：810279701"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/txt1"
+            android:text="▶程序员技术交流群：458739310 "
+          />
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#262626"
+            android:text="微信群"
+            android:layout_height="wrap_content" />
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/txt1"
+            android:text="▶程序员招聘（内推）圈"
+          />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/txt1"
+            android:text="▶Android学习指南①群"
+         />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/txt1"
+            android:text="▶Android学习指南②群"
+        />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/txt1"
+            android:text="▶IT博文分享①群"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/txt1"
+            android:layout_marginBottom="20dp"
+            android:text="▶程序员交流圈"
+    />
+
+    </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/drawable_complete_person_head_back2"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="5dp"
+                    android:text="我的微信"
+                    android:textColor="#262626"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/txt1"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="我的微信号【lengquele5311】，欢迎大家添加我的微信和公众号，一起交流学习，每天进步一点点！"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></View>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

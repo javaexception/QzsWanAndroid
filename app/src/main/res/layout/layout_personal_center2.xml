@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/drawable_complete_person_head_back2"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_height="100dp">
+
+
+    <GridLayout
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="3">
+        <!--我的收藏-->
+        <LinearLayout
+
+            android:id="@+id/ll_collect"
+            android:orientation="vertical"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/ic_my_collect"
+
+                />
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/person_center_girdlayout_textview"
+                android:text="我的收藏"/>
+        </LinearLayout>
+
+
+        <!--关于我-->
+        <LinearLayout
+            android:id="@+id/ll_about"
+            android:orientation="vertical"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/ic_my_meat"
+
+                />
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/person_center_girdlayout_textview"
+                android:text="关于我"/>
+        </LinearLayout>
+
+
+
+
+        <!--我的博客-->
+        <LinearLayout
+            android:id="@+id/ll_my_qzs"
+            android:orientation="vertical"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/ic_my_help"
+
+                />
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/person_center_girdlayout_textview"
+                android:text="秦子帅的博客"/>
+        </LinearLayout>
+
+
+    </GridLayout>
+
+</LinearLayout>

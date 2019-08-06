@@ -1,0 +1,82 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.android.support:design:28.0.0'
+    //图片加载框架
+    api 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    api 'jp.wasabeef:glide-transformations:3.0.1'
+    //万能适配器
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //标签控件
+    api 'com.hyman:flowlayout-lib:1.1.2'
+    //圆角imageview   https://github.com/SheHuan/NiceImageView
+    api 'com.github.SheHuan:NiceImageView:1.0.5'
+    //viewpager
+    api 'com.jude:rollviewpager:1.4.6'
+    //网络框架
+    api 'com.squareup.retrofit2:retrofit:2.6.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    api 'io.reactivex.rxjava2:rxjava:2.1.12'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    api 'com.squareup.retrofit2:converter-gson:2.6.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.6.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.6.0'
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    api 'com.trello.rxlifecycle2:rxlifecycle-navi:2.1.0'
+    //底部导航栏
+    api 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+    api 'com.google.code.gson:gson:2.2.4'
+    //沉浸状态栏
+    // 基础依赖包，必须要依赖
+    api 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
+    // fragment快速实现（可选）
+    api 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta05'
+    //上拉加载  下拉刷新
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-16'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-16'
+    //1.1.0 （1.0.5及以前版本的老用户升级需谨慎，API改动过大）
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-21'
+    //banner
+    api 'com.youth.banner:banner:1.4.10'
+    api 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+    //模糊
+    api 'jp.wasabeef:blurry:3.0.0'
+    //x5
+    api files('libs/tbs_sdk_thirdapp_v4.3.0.1020_43633_sharewithdownload_withoutGame_obfs_20190111_105200.jar')
+
+
+
+    //    //左滑删除
+    api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+
+}

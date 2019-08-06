@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">安卓干货铺</string>
+
+    <string name="hint_search">搜索感兴趣的文章</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

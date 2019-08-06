@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="64dp">
+
+        <FrameLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:layout_marginRight="58dp"
+                android:id="@+id/edt_search"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/drawable_addfriend_search_bg"
+                android:layout_width="match_parent"
+                android:textColor="#1D1D1D"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:paddingLeft="39dp"
+                android:hint="昵称"
+                android:textColorHint="#ACACAC"
+                android:layout_height="34dp" />
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_addfriend_find" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_close"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="取消"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#666666"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/tv_no_view"
+        style="@style/backgroundView"></View>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:background="@color/white"
+        android:text="搜索不存在"
+        android:textColor="#ACACAC"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srf_search_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="#00000000"
+        app:srlPrimaryColor= "#00000000"
+        app:srlEnablePreviewInEditMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>

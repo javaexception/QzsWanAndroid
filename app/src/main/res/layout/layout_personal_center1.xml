@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/ic_personal_center_bg"
+    android:layout_height="184dp">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></View>
+        <ImageView
+            android:id="@+id/iv_login_out"
+            android:paddingRight="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/ic_login_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:background="@drawable/drawable_personal_center_bg1">
+
+
+        <!--个人信息-->
+        <LinearLayout
+
+            android:layout_marginLeft="107dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="欢迎大家关注微信公众号【秦子帅】"
+                android:id="@+id/tv_sign"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="#707070"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!--头像-->
+    <FrameLayout
+        android:id="@+id/fl_head"
+        android:layout_marginTop="90dp"
+        android:layout_width="72dp"
+        android:layout_marginLeft="22dp"
+        android:layout_height="72dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+             android:src="@mipmap/ic_launcher_round"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+
+    <!--登录注册按钮-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="登录/注册"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="116dp"
+        android:layout_height="wrap_content"></android.support.v7.widget.AppCompatTextView>
+    <!--昵称-->
+    <LinearLayout
+
+        android:id="@+id/ll_nickname"
+        android:layout_marginTop="94dp"
+        android:layout_marginLeft="119dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="28dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_username"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="或者明天"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+</FrameLayout>
