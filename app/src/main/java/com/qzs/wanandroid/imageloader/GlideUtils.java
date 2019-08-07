@@ -185,9 +185,7 @@ public class GlideUtils {
         if (imageView == null) {
             return;
         }
-        if (o==null){
-            return;
-        }
+
         Drawable drawable = imageView.getDrawable();
 
         Glide.with(imageView.getContext())
