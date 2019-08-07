@@ -29,7 +29,7 @@
 
 ### APK下载安装
 
-- [点击下载安装](https://github.com/javaexception/QzsWanAndroid/blob/master/app/release/app-release.apk)
+- [点击下载安装](https://www.pgyer.com/pxdM)
 
 ### 我的联系方式
 
