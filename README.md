@@ -15,15 +15,29 @@
 - 取消收藏
 - 收藏列表
 
-### 所用到的库
+### dependenices
 
-[retrofit](https://github.com/square/retrofit)
-[okhttp](https://github.com/square/okhttp)
-[rxjava](https://github.com/ReactiveX/RxJava)
-[Glide](https://github.com/bumptech/glide)
-[Banner](https://github.com/youth5201314/banner)
-[SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
-[retrofit](https://github.com/square/retrofit)
-[retrofit](https://github.com/square/retrofit)
-[retrofit](https://github.com/square/retrofit)
+- [retrofit](https://github.com/square/retrofit)
+- [okhttp](https://github.com/square/okhttp)
+- [rxjava](https://github.com/ReactiveX/RxJava)
+- [Glide](https://github.com/bumptech/glide)
+- [Banner](https://github.com/youth5201314/banner)
+- [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
+- [BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
+- [flowlayout](https://github.com/hongyangAndroid/FlowLayout)
+- [SwipeDelMenuLayout](https://github.com/mcxtzhang/SwipeDelMenuLayout)
+
+### APK下载安装
+
+- [点击下载安装](https://github.com/javaexception/QzsWanAndroid/blob/master/app/release/app-release.apk)
+
+### 我的联系方式
+
+  - 我的微信公众号
+  [](https://github.com/javaexception/QzsWanAndroid/blob/master/gif/ic_me.jpg)
+
+  - 我的微信号: lengquele5311
+  
+  
+  
 
