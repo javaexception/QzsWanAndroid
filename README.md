@@ -34,7 +34,8 @@
 ### 我的联系方式
 
   - 我的微信公众号
-  [](https://github.com/javaexception/QzsWanAndroid/blob/master/gif/ic_me.jpg)
+  ![](https://github.com/javaexception/QzsWanAndroid/blob/master/gif/ic_me.jpg)
+
 
   - 我的微信号: lengquele5311
   
