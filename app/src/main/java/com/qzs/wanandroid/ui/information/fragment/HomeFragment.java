@@ -248,23 +248,20 @@ public class HomeFragment  extends BaseMvpFragment<IFragmentHomeView, FrHomePres
         banner.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i1) {
-
-
             }
-
             @Override
             public void onPageSelected(int i) {
                 LogUtils.d("切换----   "+ i);
                 if (!getActivity().isFinishing()){
-                    GlideUtils.loadBlurry(ivBannerBg,bannerlist.get(i).getImagePath());
+                    if (bannerlist!=null&&bannerlist.size()>0){
+                        GlideUtils.loadBlurry(ivBannerBg,bannerlist.get(i).getImagePath());
+                    }
 
                 }
-
             }
 
             @Override
             public void onPageScrollStateChanged(int i) {
-
             }
         });
 
